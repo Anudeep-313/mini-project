@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="logo">
+                <h3> E-Commerence</h3>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li> <a href="#">Sign Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="link">
+        <ul>
+            <li><a href="#sales"> Sales</a></li>
+            <li><a href="#shipping"> shipping</a></li>
+        </ul>
+    </div>
+    <div id="sales">
+        <iframe src="http://demo-sdp.herokuapp.com/public/dashboard/eee2c776-c677-415c-a229-a2c22d2024e6"
+            frameborder="0" width="100%" height="800px" allowtransparency></iframe>
+    </div>
+    <div id="shipping">
+        <iframe src="http://demo-sdp.herokuapp.com/public/dashboard/dec2216b-97ef-4b98-a507-b1a5e6e43329"
+            frameborder="0" width="100%" height="1500px" allowtransparency></iframe>
+    </div>
+    <script>
+        $(window).on('scroll',function(){
+          if ($(window).scrollTop()){
+               $('.nav').addClass('white');
+           }
+           else{
+                $('.nav').removeClass('white');
+           }
+       })
+   </script>
+</body>
+
+</html>
