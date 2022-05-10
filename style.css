@@ -60,7 +60,7 @@ p{
     line-height: 50px;
 }
 .white{
-    background-color: white;
+    background-color: rgba(255, 165, 0, 0.73);
 }
 .link{
     border: 2px black ;
