@@ -1,61 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datavis:Analysis Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div class="header">
-        <div class="nav">
-            <div class="logo">
-                <h2> DATAVIS</h2>
-            </div>
-            <div class="links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li> <a href="#">Sign Out</a></li>
-                </ul>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="1; url=http://datavis.epizy.com/?i=1"> 
+    <title>DATAVIS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">DATAVIS</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-    </div>
-    <div class="link">
-        <ul>
-            <li><a href="#sales"> Sales</a></li>
-            <li><a href="#shipping"> Shipping</a></li>
-            <li><a href="#product"> Product</a></li>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#Sales" class="navbar__links" id="Sales-page">Sales</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#Shipping" class="navbar__links" id="Shipping-page">Shipping</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#Products" class="navbar__links" id="Products-page">Products</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup">Sign Out</a>
+          </li>
+          <li class="navbar__btn">
+            <button class="button" style="font-size:medium; cursor:pointer;" onClick="toggleTheme()">Toggle Theme</button>
+          </li>
         </ul>
-    </div>
-    <div id="sales">
-        <div class="nav">Sales</div>
-        <iframe src="http://demo-sdp.herokuapp.com/public/dashboard/423c1909-9951-4875-929f-e56771af0766"
-            frameborder="0" width="100%" height="800px" allowtransparency></iframe>
-    </div>
-    <div id="shipping">
-        <div class="nav">Shipping</div>
-        <iframe src="http://demo-sdp.herokuapp.com/public/dashboard/dfe7ba73-46cc-408e-b3b4-f6067d39b61c"
-            frameborder="0" width="100%" height="1500px" allowtransparency></iframe>
-    </div>
-    <div id="Product">
-        <div class="nav">Product</div>
-        <iframe src="http://demo-sdp.herokuapp.com/public/dashboard/f36bf050-7e63-498a-8694-503daa762cf4"
-            frameborder="0" width="100%" height="1500px" allowtransparency></iframe>
-    </div>
-    <script>
-        $(window).on('scroll',function(){
-          if ($(window).scrollTop()){
-               $('.nav').addClass('white');
-           }
-           else{
-                $('.nav').removeClass('white');
-           }
-       })
-   </script>
-</body>
+      </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading"><span>DATAVIS</span> for easy and effective Financial modeling, business valuation and budgeting.</h1>
+        <p class="hero__description">Unlimited Analysis For Business Strategy</p>
+        <button class="main__btn"><a href="#Sales">Explore</a></button>
+      </div>
+    </div>
+
+    <!-- Sales Section -->
+    <div class="main" id="Sales">
+      <div class="main__container">
+        <iframe id="the-iframe" src="http://demo-sdp.herokuapp.com/public/dashboard/423c1909-9951-4875-929f-e56771af0766"
+        frameborder="0" width="100%" height="800px" allowtransparency></iframe>
+      </div>
+    </div>
+    <!-- Shipping section  -->
+    <div class="main" id="Shipping">
+      <div class="main__container">
+        <iframe src="http://demo-sdp.herokuapp.com/public/dashboard/dfe7ba73-46cc-408e-b3b4-f6067d39b61c"
+        frameborder="0" width="100%" height="800px" allowtransparency></iframe>
+      </div>
+    </div>
+    
+    <!-- Products section -->
+    <div class="main" id="Products">
+      <div class="main__container">
+        <iframe src="http://demo-sdp.herokuapp.com/public/dashboard/f36bf050-7e63-498a-8694-503daa762cf4"
+        frameborder="0" width="100%" height="800px" allowtransparency></iframe>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h3>Group Members :  </h3>
+            <a href="https://www.linkedin.com/in/bhuvan-y-e-9591ba191/">  Bhuvan Y E </a> <a href="https://www.linkedin.com/in/angaj-a-82208b153/">  Angaj A</a>
+            <a href="https://www.linkedin.com/in/bhanu-prakash-361b05193/">  Bhanu Prakash </a> <a href="https://www.linkedin.com/in/anudeep-s-654356192/"> Anudeep</a>
+          </div>
+          <!-- <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <a href="/">Contact</a> <a href="/">Support</a>
+            <a href="/">Destinations</a>
+          </div> -->
+        </div>
+       
+      </div>
+      
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>
