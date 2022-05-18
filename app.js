@@ -1,6 +1,11 @@
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 const navLogo = document.querySelector('#navbar__logo');
+const iframes = document.querySelectorAll('iframe');
+// const theme = localStorage.getItem('theme');
+// 	if (theme === "dark") {
+// 		document.documentElement.setAttribute('data-theme', 'dark');
+// 	}
 
 // Display Mobile Menu
 const mobileMenu = () => {
@@ -62,3 +67,39 @@ const hideMobileMenu = () => {
 
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
+
+// dark mode
+// const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');	
+
+// if (theme === "dark") {
+// 	document.getElementById("theme-toggle").innerHTML = "Light Mode";
+// } else if (theme === "light") {
+// 	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+// } else if  (userPrefers === "dark") {
+// 	document.documentElement.setAttribute('data-theme', 'dark');
+// 	window.localStorage.setItem('theme', 'dark');
+// 	document.getElementById("theme-toggle").innerHTML = "Light Mode";
+// } else {
+// 	document.documentElement.setAttribute('data-theme', 'light');
+// 	window.localStorage.setItem('theme', 'light');
+// 	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+// }
+
+// function modeSwitcher() {
+// 	let currentMode = document.documentElement.getAttribute('data-theme');
+// 	if (currentMode === "dark") {
+// 		document.documentElement.setAttribute('data-theme', 'light');
+// 		window.localStorage.setItem('theme', 'light');
+// 		document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+// 	} else {
+// 		document.documentElement.setAttribute('data-theme', 'dark');
+// 		window.localStorage.setItem('theme', 'dark');
+// 		document.getElementById("theme-toggle").innerHTML = "Light Mode";
+// 	}
+// }
+
+function toggleTheme() {
+  for (i = 0; i < iframes.length; i++) {
+    iframes[i].classList.toggle('is-dark');
+  }
+}
