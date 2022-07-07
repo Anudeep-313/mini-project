@@ -10,5 +10,3 @@
 ---
 
 <p> we have created Data pipeline using AWS Glue, AWS Redshift and Metabase </p>
-
-___
