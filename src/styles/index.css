@@ -107,7 +107,16 @@ a {
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
-  width: 100%;
+  min-height: 100px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.darkmode__toggle__icon {
+  color: #fff;
+  height: 24px;
+  width: 24px;
+  stroke-width: 1.8px;
 }
 
 .button {
