@@ -9,7 +9,5 @@
 
 ---
 
-# Contribution Rules :
-- Fork the Repo.
-- Don't Forget to star this Repo.
-- Improvements are encouraged.
+# How to contribute
+For guidelines how to contribute to this project please see [CONTRIBUTING](CONTRIBUTING.md)
