@@ -38,6 +38,10 @@ a {
   color: var(--dark-text-color);
 }
 
+.hidden {
+  display: none;
+}
+
 .navbar {
   background: #131313;
   height: 80px;

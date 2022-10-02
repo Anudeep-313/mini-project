@@ -81,12 +81,16 @@ let currentTheme = 'ligth'
 
 if (themeStorage.getItem('darkMode')) {
   document.querySelector('html').classList.add('dark-mode')
+  document.getElementById('moon').classList.add('hidden')
   currentTheme = 'dark'
 }
 
 toggleDarkModeButton.addEventListener('click', () => {
   if (currentTheme === 'light') {
     document.querySelector('html').classList.toggle('dark-mode')
+    document.getElementById('sun').classList.toggle('hidden')
+    document.getElementById('moon').classList.toggle('hidden')
+
     // save preference in localstorage
     themeStorage.setItem('darkMode', true)
     currentTheme = 'dark'
@@ -94,6 +98,8 @@ toggleDarkModeButton.addEventListener('click', () => {
 
   if (currentTheme === 'dark') {
     document.querySelector('html').classList.toggle('dark-mode')
+    document.getElementById('sun').classList.toggle('hidden')
+    document.getElementById('moon').classList.toggle('hidden')
     // save preference in localstorage
     themeStorage.setItem('darkMode', false)
     currentTheme = 'ligth'
