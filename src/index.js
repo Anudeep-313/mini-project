@@ -75,7 +75,7 @@ navLogo.addEventListener('click', hideMobileMenu);
  * Dark mode
  * function toggle dark mode
  */
-const toggleDarkModeButton = document.querySelector('#toggle-dakmode')
+const toggleDarkModeButton = document.querySelector('#toggle-darkmode')
 
 let currentTheme = 'ligth'
 
