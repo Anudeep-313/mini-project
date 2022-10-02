@@ -9,4 +9,6 @@
 
 ---
 
-<p> we have created Data pipeline using AWS Glue, AWS Redshift and Metabase </p>
+# Contribution Rules :
+- Fork the Repo.
+- Don't Forget to star this Repo.
