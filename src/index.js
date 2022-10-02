@@ -1,11 +1,14 @@
+import { LocalStorage } from './utils/localstorage.js'
+
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 const navLogo = document.querySelector('#navbar__logo');
 const iframes = document.querySelectorAll('iframe');
-// const theme = localStorage.getItem('theme');
-// 	if (theme === "dark") {
-// 		document.documentElement.setAttribute('data-theme', 'dark');
-// 	}
+
+const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark': 'light'
+const DEFAUL_LOCALSTORAGE = { darkMode: isDarkMode }
+const themeStorage = new LocalStorage('v1', 'theme', DEFAUL_LOCALSTORAGE)
+
 
 // Display Mobile Menu
 const mobileMenu = () => {
@@ -68,38 +71,31 @@ const hideMobileMenu = () => {
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
 
-// dark mode
-// const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');	
+/**
+ * Dark mode
+ * function toggle dark mode
+ */
+const toggleDarkModeButton = document.querySelector('#toggle-dakmode')
 
-// if (theme === "dark") {
-// 	document.getElementById("theme-toggle").innerHTML = "Light Mode";
-// } else if (theme === "light") {
-// 	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-// } else if  (userPrefers === "dark") {
-// 	document.documentElement.setAttribute('data-theme', 'dark');
-// 	window.localStorage.setItem('theme', 'dark');
-// 	document.getElementById("theme-toggle").innerHTML = "Light Mode";
-// } else {
-// 	document.documentElement.setAttribute('data-theme', 'light');
-// 	window.localStorage.setItem('theme', 'light');
-// 	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-// }
+let currentTheme = 'ligth'
 
-// function modeSwitcher() {
-// 	let currentMode = document.documentElement.getAttribute('data-theme');
-// 	if (currentMode === "dark") {
-// 		document.documentElement.setAttribute('data-theme', 'light');
-// 		window.localStorage.setItem('theme', 'light');
-// 		document.getElementById("theme-toggle").innerHTML = "Dark Mode";
-// 	} else {
-// 		document.documentElement.setAttribute('data-theme', 'dark');
-// 		window.localStorage.setItem('theme', 'dark');
-// 		document.getElementById("theme-toggle").innerHTML = "Light Mode";
-// 	}
-// }
-
-function toggleTheme() {
-  for (i = 0; i < iframes.length; i++) {
-    iframes[i].classList.toggle('is-dark');
-  }
+if (themeStorage.getItem('darkMode')) {
+  document.querySelector('html').classList.add('dark-mode')
+  currentTheme = 'dark'
 }
+
+toggleDarkModeButton.addEventListener('click', () => {
+  if (currentTheme === 'light') {
+    document.querySelector('html').classList.toggle('dark-mode')
+    // save preference in localstorage
+    themeStorage.setItem('darkMode', true)
+    currentTheme = 'dark'
+  }
+
+  if (currentTheme === 'dark') {
+    document.querySelector('html').classList.toggle('dark-mode')
+    // save preference in localstorage
+    themeStorage.setItem('darkMode', false)
+    currentTheme = 'ligth'
+  }
+})
