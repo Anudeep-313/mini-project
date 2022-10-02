@@ -1,0 +1,22 @@
+{
+  "name": "mini-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anudeep-313/mini-project.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Anudeep-313/mini-project/issues"
+  },
+  "homepage": "https://github.com/Anudeep-313/mini-project#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
