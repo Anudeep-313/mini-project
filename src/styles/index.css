@@ -21,10 +21,6 @@ html {
   color: var(--light-text-color);
 }
 
-a {
-  color: var(--light-text-color);
-}
-
 .dark-mode {
   background-color: var(--dark-background-color);
   color: var(--dark-text-color);
