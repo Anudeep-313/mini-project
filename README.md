@@ -12,3 +12,4 @@
 # Contribution Rules :
 - Fork the Repo.
 - Don't Forget to star this Repo.
+- Improvements are encouraged.
