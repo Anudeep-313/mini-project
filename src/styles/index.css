@@ -13,7 +13,6 @@
   margin: 0;
   padding: 0;
   font-family: "Kumbh Sans", sans-serif;
-  scroll-behavior: smooth;
 }
 
 html {
@@ -24,6 +23,8 @@ html {
 .dark-mode {
   background-color: var(--dark-background-color);
   color: var(--dark-text-color);
+  background: rgb(52, 52, 52);
+  background: linear-gradient(90deg, rgba(52, 52, 52, 1) 0%, rgba(223, 105, 130, 1) 94%);
 }
 
 .dark-mode iframe {
@@ -96,22 +97,24 @@ html {
 body::-webkit-scrollbar {
   width: 11px;
 }
+
 .card:hover {
   background-color: rgb(132, 94, 144);
   transform: scale(1.1);
 }
 
 body::-webkit-scrollbar-track {
-  background:  linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgb(0, 35, 211) 70%);
+  background: linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgb(255, 255, 255) 70%);
 }
 
 body::-webkit-scrollbar-thumb {
   background: transparent;
   box-shadow: 0px 0px 0px 100000vh rgb(45, 42, 42);
-    border-radius: 8px;
+  border-radius: 8px;
 }
+
 .box {
-  box-shadow: 0px 0px 4px ??? black;
+  box-shadow: 0px 0px 4px black;
 }
 
 .navbar__btn {
@@ -119,7 +122,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0px 1rem;
   width: 100%;
 }
 
@@ -130,18 +133,24 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   text-decoration: none;
   padding: 10px 20px;
-  height: 100%;
-  width: 100%;
+  height: 40px;
+  width: 150px;
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #833ab4;
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(90deg, rgba(131, 21, 21, 1) 0%, rgba(212, 111, 137, 1) 94%);
   transition: all 0.3s ease;
 }
 
+.button:hover {
+  border: 2px solid white;
+  transform: scale(1.1);
+  background: black;
+}
+
+
 .navbar__links:hover {
+  transform: scale(1.1);
   color: #9518fc;
   transition: all 0.3s ease;
 }
@@ -261,17 +270,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 .hero__heading span {
-  background: #ee0979; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ff6a00,
-    #ee0979
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ff6a00,
-    #ee0979
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ee0979;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #ff6a00,
+      #ee0979);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #ff6a00,
+      #ee0979);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -281,17 +289,16 @@ body::-webkit-scrollbar-thumb {
 
 .hero__description {
   font-size: 25px;
-  background: #da22ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #9114ff,
-    #da22ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #8f0eff,
-    #da22ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ffffff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #9114ff,
+      #da22ff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #ff0471,
+      #ffffff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -320,17 +327,16 @@ body::-webkit-scrollbar-thumb {
 
 .main__content h2 {
   font-size: 4rem;
-  background: #ff8177; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #9114ff,
-    #da22ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #8f0eff,
-    #da22ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ff8177;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #9114ff,
+      #da22ff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #8f0eff,
+      #da22ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -346,9 +352,9 @@ body::-webkit-scrollbar-thumb {
 
 .main__btn {
   font-size: 1.8rem;
-  background: #833ab4;
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: #9d00ff;
+  /* background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #d60707); */
+  /* background: -webkit-linear-gradient(to right,  #000000, #fd0277,  #de0000); */
   padding: 20px 60px;
   border: none;
   border-radius: 4px;
@@ -357,12 +363,19 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   transition: all 0.35s;
   outline: none;
+  border: 4px solid black;
+  border-radius: 5px;
 }
 
 .main__btn a {
   position: relative;
   z-index: 2;
   text-decoration: none;
+}
+
+.main__btn:hover{
+  transform: scale(0.9);
+  border: 2px solid white;
 }
 
 .main__btn:after {
@@ -372,7 +385,7 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   width: 0;
   height: 100%;
-  background: #ff1ead;
+  background: #000000;
   transition: all 0.35s;
   border-radius: 4px;
 }
@@ -468,6 +481,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 2rem;
     margin-top: 3rem;
   }
+
   .main__content h2 {
     font-size: 2rem;
   }
@@ -481,6 +495,7 @@ body::-webkit-scrollbar-thumb {
     margin: 2.5rem 0;
   }
 }
+
 /* Footer CSS */
 .footer__container {
   background-color: #131313;
@@ -501,20 +516,20 @@ body::-webkit-scrollbar-thumb {
 
 .footer__link--wrapper {
   margin-bottom: 20px;
-  background: linear-gradient(-90deg,#ff8a00,#e52e71);
+  background: linear-gradient(-90deg, #ff8a00, #e52e71);
   border-radius: 10px;
   display: flex;
   transition: background .5s ease-in-out, transform 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }
 
-.footer__link--wrapper:hover{
-  background: linear-gradient(180deg,#ff8a00,#e52e71);
-  border-radius: 2px;
-  transform: skew(4deg, 8deg);
+.footer__link--wrapper:hover {
+  background: linear-gradient(180deg, #ff8a00, #e52e71);
+  transform: scale(0.9);
+  /* transform: skew(4deg, 8deg); */
 }
 
 .footer__link--items {
-  display:grid;
+  display: grid;
   flex-direction: row;
   align-items: flex-start;
   margin: 16px;
@@ -523,20 +538,20 @@ body::-webkit-scrollbar-thumb {
   box-sizing: border-box;
 }
 
-.footer__link--items h3 {
+/* .footer__link--items h3 {
   margin-bottom: 8px;
   color: #130953;
-}
+} */
 
-.footer__link--items a {
-    transform:scale(1);
-    color: #efefef;
-    transition: color .2s ease-in-out, transform 0.3s ease-in-out;
-}
+/* .footer__link--items a {
+  transform: scale(1);
+  color: #efefef;
+  transition: color .2s ease-in-out, transform 0.3s ease-in-out;
+} */
 
 .footer__link--items a:hover {
-    transform: scaleX(1.2);
-    color: rgb(0, 0, 0);
+  transform: scale(1.2);
+  color: rgb(0, 0, 0);
 }
 
 @media screen and (max-width: 820px) {
