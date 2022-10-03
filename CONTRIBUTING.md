@@ -29,3 +29,5 @@
     - git push origin <add-your-branch-name>
 
 Once the PR is reviewed by the maintainers, it will be approved.
+
+💻Happy Coding🖱
