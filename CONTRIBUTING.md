@@ -1,5 +1,3 @@
-# Contribution Rules.
-
 #Steps to Submit a PR
 -Fork this repository.🍴
 -At the top right corner, you will see the term "fork".Click it and you will have created a copy of the same project in your account.
