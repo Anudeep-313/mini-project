@@ -1,3 +1,4 @@
+
 # Contribution Rules.
 - Fork the repo.
 - Clone the forked copy of the project
@@ -18,3 +19,4 @@
 2. changes should be properly explained
 3. try to attach a screenshot of the changes
 - Once the PR is reviewed the maintainers, it will be approved. 
+
