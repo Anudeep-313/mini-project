@@ -21,10 +21,6 @@ html {
   color: var(--light-text-color);
 }
 
-a {
-  color: var(--light-text-color);
-}
-
 .dark-mode {
   background-color: var(--dark-background-color);
   color: var(--dark-text-color);
@@ -99,6 +95,27 @@ a {
   text-decoration: none;
   height: 100%;
   transition: all 0.3s ease;
+}
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+.card:hover {
+  background-color: rgb(132, 94, 144);
+  transform: scale(1.1);
+}
+
+body::-webkit-scrollbar-track {
+  background:  linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgb(0, 35, 211) 70%);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: transparent;
+  box-shadow: 0px 0px 0px 100000vh rgb(45, 42, 42);
+    border-radius: 8px;
+}
+.box {
+  box-shadow: 0px 0px 4px ??? black;
 }
 
 .navbar__btn {
@@ -470,9 +487,9 @@ a {
     margin: 2.5rem 0;
   }
 }
-
 /* Footer CSS */
 .footer__container {
+  background-color: #131313;
   padding: 1rem 0;
   display: flex;
   flex-direction: row;
@@ -480,48 +497,56 @@ a {
   align-items: center;
 }
 
+
 .footer__links {
   width: 100%;
   max-width: 1000px;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
 }
 
 .footer__link--wrapper {
+  margin-bottom: 20px;
+  background: linear-gradient(-90deg,#ff8a00,#e52e71);
+  border-radius: 10px;
   display: flex;
+  transition: background .5s ease-in-out, transform 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+.footer__link--wrapper:hover{
+  background: linear-gradient(180deg,#ff8a00,#e52e71);
+  border-radius: 2px;
+  transform: skew(4deg, 8deg);
 }
 
 .footer__link--items {
-  display: inline-flex;
+  display:grid;
   flex-direction: row;
   align-items: flex-start;
   margin: 16px;
   text-align: center;
+  width: 160px;
   box-sizing: border-box;
 }
 
 .footer__link--items h3 {
   margin-bottom: 8px;
-  padding: 10px;
+  color: #130953;
 }
 
 .footer__link--items a {
-  text-decoration: none;
-  margin: 0 20px;
-  padding: 10px;
-  border-radius: 9px;
-  margin-bottom: 0.5rem;
-  background-color: #ad307f;
-  transition: 0.3 ease-out;
-  border: none;
+    transform:scale(1);
+    color: #efefef;
+    transition: color .2s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .footer__link--items a:hover {
+
   animation: footer__link__animation 0.5s ease;
   color: #ff566b;
   background-color: white;
   border: none;
-}
+
 
 @keyframes footer__link__animation {
   0% {
@@ -542,6 +567,7 @@ a {
   .footer__link--wrapper {
     flex-direction: row;
   }
+
 }
 
 @media screen and (max-width: 380px) {
@@ -549,10 +575,5 @@ a {
     margin: 0;
     padding: 5px;
     width: 100%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .footer__link--items {
-    flex-direction: column;
   }
 }
