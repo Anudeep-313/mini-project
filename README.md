@@ -25,9 +25,12 @@ For guidelines how to contribute to this project please see [CONTRIBUTING](CONTR
 ## ⭐ Project Contributors
 <table align="center">
 <tr>
-<td>
-<a href="https://github.com/Anudeep-313/mini-project/graphs/contributors" align="center">
-  <img src="https://contrib.rocks/image?repo=Anudeep-313/mini-project" /> 
+<td>  
+  <a href="https://github.com/sonualam-bot/mini-project/graphs/contributors" align="center">
+  <img src="https://contrib.rocks/image?repo=sonualam-bot/mini-project" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
 </a>
 
 ---
