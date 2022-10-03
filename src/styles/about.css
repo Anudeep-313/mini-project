@@ -1,0 +1,11 @@
+
+#text{
+    width: 90%;
+    height: 90vh;
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    background-color: var(--light-background-color);
+    color: var(--light-text-color);
+    letter-spacing: 3px;
+} 
