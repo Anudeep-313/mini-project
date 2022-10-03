@@ -34,6 +34,10 @@ html {
   color: var(--dark-text-color);
 }
 
+.hidden {
+  display: none;
+}
+
 .navbar {
   background: #131313;
   height: 80px;
@@ -120,7 +124,17 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
-  width: 100%;
+  min-height: 100px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.darkmode__toggle__icon {
+  color: #fff;
+  height: 24px;
+  width: 24px;
+  stroke-width: 1.8px;
+  cursor: pointer;
 }
 
 .button {
@@ -260,43 +274,35 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 24px;
 }
 
-.hero__heading span {
+.hero__heading {
   background: #ee0979; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ff6a00,
-    #ee0979
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ff6a00,
-    #ee0979
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: 100%;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -mo-text-fill-color: transparent;
+  animation: hero__heading__animation 10s ease infinite;
+  font-size: 4rem;
+}
+
+@keyframes hero__heading__animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .hero__description {
-  font-size: 25px;
-  background: #da22ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #9114ff,
-    #da22ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #8f0eff,
-    #da22ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  font-size: 1.3rem;
 }
 
 .highlight {
@@ -305,11 +311,11 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (max-width: 768px) {
   .hero__heading {
-    font-size: 15px;
+    font-size: 48px;
   }
 
   .hero__description {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -372,7 +378,7 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   width: 0;
   height: 100%;
-  background: #ff1ead;
+  background: linear-gradient(to right, #ff1ead 80%, #ff67c7 );
   transition: all 0.35s;
   border-radius: 4px;
 }
@@ -535,8 +541,22 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer__link--items a:hover {
-    transform: scaleX(1.2);
-    color: rgb(0, 0, 0);
+
+  animation: footer__link__animation 0.5s ease;
+  color: #ff566b;
+  background-color: white;
+  border: none;
+
+
+@keyframes footer__link__animation {
+  0% {
+    background-color: #ad307f;
+  }
+  100% {
+    color: #ff566b;
+    background-color: white;
+    border: none;
+  }
 }
 
 @media screen and (max-width: 820px) {
