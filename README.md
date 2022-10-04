@@ -4,7 +4,7 @@
 
 <p align="center">
 
-  <img style='border:2px solid #FFFFFF' src="/datavis.gif">
+  <img style='border:2px solid #FFFFFF' src="/src/assets/datavis.gif">
 </p>
 
 ---
