@@ -12,3 +12,10 @@
 # Contribution Rules :
 - Fork the Repo.
 - Don't Forget to star this Repo.
+
+# Tech Stacks Used :
+- Python.
+- HTML.
+- Css.
+- JS.
+
