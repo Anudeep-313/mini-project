@@ -1,107 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-    <title>DATAVIS</title>
-    <link rel="stylesheet" href="src/styles/index.css" />
-    <link rel="shortcut icon" href="./Favicon.jpg" type="image/x-icon">
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
-    />
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  </head>
-  <body>
-    <!-- Navbar Section -->
-    <nav class="navbar">
-      <div class="navbar__container">
-        <a href="#home" id="navbar__logo">DATAVIS</a>
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span> <span class="bar"></span>
-          <span class="bar"></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DATAVIS</title>
+  <link rel="stylesheet" href="src/styles/index.css" />
+  <link rel="shortcut icon" href="./Favicon.jpg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="#home" id="navbar__logo">DATAVIS</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span> <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="#home" class="navbar__links" id="home-page">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#Sales" class="navbar__links" id="Sales-page">Sales</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#Shipping" class="navbar__links" id="Shipping-page">Shipping</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#Products" class="navbar__links" id="Products-page">Products</a>
+        </li>
+        <li class="navbar__btn">
+          <button class="button" id="signup">
+            <a href="/signup.html">Sign Up</a>
+          </button>
+        </li>
+        <li class="navbar__btn">
+          <button class="button" id="toggle-darkmode">
+            <svg class="darkmode__toggle__icon" id="sun" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+            </svg>
+            <svg class="darkmode__toggle__icon" id="moon" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero" id="home">
+    <div class="hero__container">
+      <h1 class="hero__heading">DATAVIS</h1>
+      <p class="hero__description">Easy & Effective Financial modeling, Business valuation & Budgeting</p>
+      <button class="main__btn"><a href="#Sales">Explore</a></button>
+    </div>
+  </div>
+
+  <!-- Sales Section -->
+  <div class="main" id="Sales">
+    <div class="main__container">
+      <iframe id="the-iframe" src="https://demo-sdp.herokuapp.com/public/dashboard/423c1909-9951-4875-929f-e56771af0766"
+        frameborder="0" width="100%" height="800px" allowtransparency></iframe>
+    </div>
+  </div>
+  <!-- Shipping section  -->
+  <div class="main" id="Shipping">
+    <div class="main__container">
+      <iframe src="https://demo-sdp.herokuapp.com/public/dashboard/dfe7ba73-46cc-408e-b3b4-f6067d39b61c" frameborder="0"
+        width="100%" height="800px" allowtransparency></iframe>
+    </div>
+  </div>
+
+  <!-- Products section -->
+  <div class="main" id="Products">
+    <div class="main__container">
+      <iframe src="https://demo-sdp.herokuapp.com/public/dashboard/f36bf050-7e63-498a-8694-503daa762cf4" frameborder="0"
+        width="100%" height="800px" allowtransparency></iframe>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+
+          <h3>Made with 💗 by</h3>
+          <button class="glow-on-hover" type="button"><a href="https://www.linkedin.com/in/bhuvan-y-e-9591ba191/">
+              Bhuvan Y E </a></button>
+          <button class="glow-on-hover" type="button"><a href="https://www.linkedin.com/in/angaj-a-82208b153/"> Angaj
+              A</a></button>
+          <button class="glow-on-hover" type="button"><a href="https://www.linkedin.com/in/bhanu-prakash-361b05193/">
+              Bhanu Prakash </a></button>
+          <button class="glow-on-hover" type="button"><a href="https://www.linkedin.com/in/anudeep-s-654356192/">
+              Anudeep</a></button>
+
         </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="#home" class="navbar__links" id="home-page">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#Sales" class="navbar__links" id="Sales-page">Sales</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#Shipping" class="navbar__links" id="Shipping-page">Shipping</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#Products" class="navbar__links" id="Products-page">Products</a>
-          </li>
-          <li class="navbar__btn">
-            <button class="button" id="signup"> 
-              <a href="/signup.html" >Sign Up</a>
-            </button>
-          </li>
-          <li class="navbar__btn">
-            <button class="button" id="toggle-darkmode">
-              <svg class="darkmode__toggle__icon" id="sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-              </svg>
-              <svg class="darkmode__toggle__icon" id="moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-              </svg>                            
-            </button>
-          </li>
-        </ul>
-      </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <div class="hero" id="home">
-      <div class="hero__container">
-        <h1 class="hero__heading">DATAVIS</h1>
-        <p class="hero__description">Easy & Effective Financial modeling, Business valuation & Budgeting</p>
-        <button class="main__btn"><a href="#Sales">Explore</a></button>
-      </div>
-    </div>
-
-    <!-- Sales Section -->
-    <div class="main" id="Sales">
-      <div class="main__container">
-        <iframe id="the-iframe" src="https://demo-sdp.herokuapp.com/public/dashboard/423c1909-9951-4875-929f-e56771af0766"
-        frameborder="0" width="100%" height="800px" allowtransparency></iframe>
-      </div>
-    </div>
-    <!-- Shipping section  -->
-    <div class="main" id="Shipping">
-      <div class="main__container">
-        <iframe src="https://demo-sdp.herokuapp.com/public/dashboard/dfe7ba73-46cc-408e-b3b4-f6067d39b61c"
-        frameborder="0" width="100%" height="800px" allowtransparency></iframe>
-      </div>
-    </div>
-    
-    <!-- Products section -->
-    <div class="main" id="Products">
-      <div class="main__container">
-        <iframe src="https://demo-sdp.herokuapp.com/public/dashboard/f36bf050-7e63-498a-8694-503daa762cf4"
-        frameborder="0" width="100%" height="800px" allowtransparency></iframe>
-      </div>
-    </div>
-
-    <!-- Footer Section -->
-    <div class="footer__container">
-      <div class="footer__links">
-        <div class="footer__link--wrapper">
-          <div class="footer__link--items">
-
-            <h3>Made with 💗 by</h3>
-                      <button class="glow-on-hover" type="button"><a href="https://www.linkedin.com/in/bhuvan-y-e-9591ba191/">  Bhuvan Y E </a></button>
-            <button class="glow-on-hover" type="button"><a href="https://www.linkedin.com/in/angaj-a-82208b153/">  Angaj A</a></button>
-            <button class="glow-on-hover" type="button"><a href="https://www.linkedin.com/in/bhanu-prakash-361b05193/">  Bhanu Prakash </a></button>
-            <button class="glow-on-hover" type="button"><a href="https://www.linkedin.com/in/anudeep-s-654356192/"> Anudeep</a></button>
-
-          </div>
-
-<!--           <h3>Group Members :  </h3>
+        <!--           <h3>Group Members :  </h3>
            <button class="glow-on-hover" type="button"><a href="https://www.linkedin.com/in/bhuvan-y-e-9591ba191/">  Bhuvan Y E </a></button>
             <button class="glow-on-hover" type="button"><a href="https://www.linkedin.com/in/angaj-a-82208b153/">  Angaj A</a></button>
             <button class="glow-on-hover" type="button"><a href="https://www.linkedin.com/in/bhanu-prakash-361b05193/">  Bhanu Prakash </a></button>
@@ -110,17 +117,18 @@
             
            </div>  -->
 
-          <!-- <div class="footer__link--items">
+        <!-- <div class="footer__link--items">
             <h2>Contact Us</h2>
             <a href="/">Contact</a> <a href="/">Support</a>
             <a href="/">Destinations</a>
-          </div> --> 
-        </div>
-       
+          </div> -->
       </div>
-      
+
     </div>
 
-    <script type="module" src="src/index.js"></script>
-  </body>
+  </div>
+
+  <script type="module" src="src/index.js"></script>
+</body>
+
 </html>
