@@ -12,6 +12,16 @@
 
 ---
 
+## 💻 Technology-Stack
+
+Here is a list of the technologies used to build this project.
+| Technology | Description                              
+|------------|---------------------------------------------------|
+| HTML5      | Hyper Text Markup Language               
+| CSS3       | Cascading Style Sheets                   
+| JavaScript | High Level, Dynamic, Interpreted Language
+| Python     | High Level, General-purpose language
+
 # How to contribute
 
 For guidelines how to contribute to this project please see [CONTRIBUTING](CONTRIBUTING.md)
