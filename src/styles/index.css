@@ -657,3 +657,50 @@ background: linear-gradient(90deg, rgba(70,242,255,1) 0%, rgba(121,150,253,1) 13
     width: 100%;
   }
 }
+
+
+.social-icon {
+  font-size: 1.5rem;
+}
+
+.social-link {
+  display: none;
+}
+.social-icon:hover{
+  transform: scale(1.15);
+}
+
+#dev-button-1:hover .dev-1 {
+  padding-top: 0.75rem;
+  display: inline-block;
+}
+
+.dev-button {
+  color: #fff;
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: fit-content;
+  min-width: 100%;
+  border: none;
+  outline: none;
+  min-height: 40px;
+  
+}
+.dev-button a{
+  text-decoration: none;
+  color: white;
+}
+.dev-button:hover{
+   box-shadow: rgba(0, 0, 0, 0.9) 3px 3px 2px;
+}
+
+.icons-container {  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
