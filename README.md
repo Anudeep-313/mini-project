@@ -1,6 +1,10 @@
 ## MINI PROJECT
+<p align="center">
 
-This project is about easy & effective financial modeling, business valuation & budgeting.
+  <img style='border:2px solid #FFFFFF' src="/src/assets/logo-2.png">
+</p>
+
+## This project is about easy & effective financial modeling, business valuation & budgeting.
 
 <h1 align="center"> 👇 OVERVIEW OF WEBSITE </h1>
 
