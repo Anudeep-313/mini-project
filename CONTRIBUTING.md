@@ -11,29 +11,29 @@ In this guide you will get an overview of the contribution workflow from opening
 
 - Next Clone the project into your local machine. Use the command given below👇
 
-    > git clone https://github.com/<yourUserName>/<projectName>
+     `git clone https://github.com/<yourUserName>/<projectName>`
 
 - Commit the necessary changes
 
 - Next create a new branch. Use the command given below👇
 
-    > git checkout -b your-new-branch-name
+    `git checkout -b your-new-branch-name`
 
 - To get a look at all the changes that you made.Use the command given below👇
 
-    > git status
+     `git status`
 
 - To add all the changes to the new branch use the code given below👇
 
-    > git add*
+     `git add *`
 
 - Next write a good commit message. use the code given below
 
-    > git commit -m "<message here>"
+     `git commit -m "<message here>"`
 
 - Next push the changes to remote.Use the code given below👇
 
-    > git push origin <add-your-branch-name>
+     `git push origin <add-your-branch-name>`
 
 Once the PR is reviewed by the maintainers, it will be approved.
 
