@@ -575,14 +575,13 @@ background: linear-gradient(90deg, rgba(70,242,255,1) 0%, rgba(121,150,253,1) 13
   margin-bottom: 8px;
   color: #fff;
   background: linear-gradient(45deg, #4e54c8, #8f94fb, #4e54c8, #8f94fb);
-  background-size: 200% 200%;
+  background-size: 100% 100%;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  animation: gradientMove 3s linear infinite;
+  animation: gradientMove 2s linear infinite;
   display: flex;
   align-items: center;
-  cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
 }
