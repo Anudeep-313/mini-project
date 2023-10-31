@@ -309,6 +309,7 @@ background: linear-gradient(90deg, rgba(70,242,255,1) 0%, rgba(121,150,253,1) 13
 .hero__heading {
   font-size: 30px;
   margin-bottom: 24px;
+  cursor: default;
 }
 
 .hero__heading {
@@ -344,6 +345,7 @@ background: linear-gradient(90deg, rgba(70,242,255,1) 0%, rgba(121,150,253,1) 13
 
 .hero__description {
   font-size: 1.3rem;
+  cursor: default;
 }
 
 .highlight {
