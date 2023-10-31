@@ -62,18 +62,26 @@ html {
 }
 
 #navbar__logo {
-  background-color: #ff8177;
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-  background-size: 100%;
+  background: linear-gradient(45deg, #4e54c8, #8f94fb, #4e54c8, #8f94fb);
+  background-size: 200% 200%;
+  color: transparent;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientMove 3s linear infinite;
   display: flex;
   align-items: center;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 200% -100%;
+  }
 }
 
 .navbar__menu {
